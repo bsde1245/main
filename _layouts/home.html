@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    
     {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -20,7 +20,7 @@ layout: default
         </h2>
        
       </li>
-    {% endfor %}
+    
     {% endfor %}
   </ul>
 
