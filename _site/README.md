@@ -1,2 +1,2 @@
-# Jekyllblog
-My Blog
+# main
+Home page
