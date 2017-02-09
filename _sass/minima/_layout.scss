@@ -360,13 +360,13 @@
 
 
 
-.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D{ width:240px; height:100px; margin:10px; float:left; text-align:center; vertical-align: middle;line-height: 100px; }
 .flip3D > .front{
   	padding: 5px;
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 0deg );
 	transform: perspective( 600px ) rotateY( 0deg );
-	background:#FC0; width:240px; height:200px; border-radius: 7px;
+	background:#FC0; width:240px; height:100px; border-radius: 7px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
@@ -377,7 +377,7 @@
 	position:absolute;
 	-webkit-transform: perspective( 600px ) rotateY( 180deg );
 	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+	background: #80BFFF; width:240px; height:100px; border-radius: 7px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transition: -webkit-transform .5s linear 0s;
@@ -404,9 +404,11 @@
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  vertical-align: middle;
+  line-height: 50px;  
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
