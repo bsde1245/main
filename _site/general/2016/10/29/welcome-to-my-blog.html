@@ -4,8 +4,8 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ഹായ് എന്റെ ആദ്യ ലേഖനം!!</title>
   <meta name="description" content="എല്ലാവർക്കും ശുഭ സായാഹ്നം. ഞാൻ ഒരു പുതിയ ബ്ളോഗ് തുടങ്ങിയതിന്റെ സന്തോഷം അറിയിക്കട്ടെ. ടെക്നോളജി സംബന്ധമായ വാർത്തകൾ ഈ ബ്ളോഗിൽ നിന്നും ലഭിക്കുന്നതാണ്. എന്റെ പേര...">
 
@@ -14,129 +14,76 @@
   <link rel="alternate" type="application/rss+xml" title="ജസ്റ്റിൻ ചാക്കോ" href="/feed.xml">
   
   
-  <style>
-ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-ul.pagination li {display: inline;}
-ul.pagination li a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-ul.pagination li a.active {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-}
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
-</style>
-
-
-<script>
- 
-    /* Light YouTube Embeds by @labnol */
-    /* Web: http://labnol.org/?p=27941 */
- 
-    document.addEventListener("DOMContentLoaded",
-        function() {
-            var div, n,
-                v = document.getElementsByClassName("youtube-player");
-            for (n = 0; n < v.length; n++) {
-                div = document.createElement("div");
-                div.setAttribute("data-id", v[n].dataset.id);
-                div.innerHTML = labnolThumb(v[n].dataset.id);
-                div.onclick = labnolIframe;
-                v[n].appendChild(div);
-            }
-        });
- 
-    function labnolThumb(id) {
-        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-            play = '<div class="play"></div>';
-        return thumb.replace("ID", id) + play;
-    }
- 
-    function labnolIframe() {
-        var iframe = document.createElement("iframe");
-        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allowfullscreen", "1");
-        this.parentNode.replaceChild(iframe, this);
-    }
- 
-</script>
-
-
-  
 </head>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#mainNavbar">
 
-    <header class="site-header" role="banner">
+    <header class="site-header">
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="mainNavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">ജസ്റ്റിൻ ചാക്കോ</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a class="page-link" href="#myCover">Home</a></li>
+<li><a class="page-link" href="#myPanel">Services</a></li>
+<li><a class="page-link" href="#myFeatures">Features</a></li>
+<li><a class="page-link" href="#myPic">Team</a></li>
+<li><a class="page-link" href="#myCarusel">Reviews</a></li>
+<li><a class="page-link" href="#map">About Us</a></li>
 
-  <div class="wrapper">
-<br>
-<div class="site-avatar"><img src="/me.png">
-</div>
-    <a class="site-title" href="/">ജസ്റ്റിൻ ചാക്കോ</a>
 
- 
-  <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
-
-      <div class="trigger">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
+            
+            <form class="navbar-form navbar-left" role="search" method="get" action="/search2/">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="search-box" name="query">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+            </form>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
     </nav>
-   </div>
-
+  </div> <!-- /container -->
 </header>
 
-
-<div class="layout1">
-    <main class="page-content" aria-label="Content">
+<br><br><br>
+<div class="container-fluid">
+  
+   <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
+<div class="panel panel-default text-center">
+  <div class="panel-heading">
   <header class="post-header">
-
-    <h2 class="post-title" itemprop="name headline">ഹായ് എന്റെ ആദ്യ ലേഖനം!!</h2>
-
-    <p class="post-meta"><time datetime="2016-10-29T20:20:46+05:30" itemprop="datePublished">Oct 29, 2016</time></p>
+    <h4 itemprop="name headline">ഹായ് എന്റെ ആദ്യ ലേഖനം!!</h4>
+    <p class="post-meta">
+      <time datetime="2016-10-29T20:20:46+05:30" itemprop="datePublished">
+        
+        Oct 29, 2016
+      </time>
+      </p>
   </header>
+</div>
 
   <div class="post-content" itemprop="articleBody">
-    <p>എല്ലാവർക്കും ശുഭ സായാഹ്നം. ഞാൻ ഒരു പുതിയ ബ്ളോഗ് തുടങ്ങിയതിന്റെ സന്തോഷം അറിയിക്കട്ടെ. ടെക്നോളജി സംബന്ധമായ വാർത്തകൾ ഈ ബ്ളോഗിൽ നിന്നും ലഭിക്കുന്നതാണ്. എന്റെ പേര് ജസ്റ്റിൻ ചാക്കോ, ഞാൻ കേരളത്തിൽ കണ്ണൂരാണ് താമസം. എന്റെ സൈറ്റ് സന്ദർശിച്ചതിനു നന്ദി അറിയിക്കുന്നു, വീണ്ടും വരിക. നന്ദി…. :)</p>
 
 
-</div>
+<div class="panel-body">
+    <p>എല്ലാവർക്കും ശുഭ സായാഹ്നം. ഞാൻ ഒരു പുതിയ ബ്ളോഗ് തുടങ്ങിയതിന്റെ സന്തോഷം അറിയിക്കട്ടെ. ടെക്നോളജി സംബന്ധമായ വാർത്തകൾ ഈ ബ്ളോഗിൽ നിന്നും ലഭിക്കുന്നതാണ്.  എന്റെ പേര് ജസ്റ്റിൻ ചാക്കോ, ഞാൻ കേരളത്തിൽ കണ്ണൂരാണ് താമസം. എന്റെ സൈറ്റ് സന്ദർശിച്ചതിനു നന്ദി അറിയിക്കുന്നു, വീണ്ടും വരിക. നന്ദി…. :)</p>
+
+
+  </div></div>
 
   
 <div id="fb-root"></div>
@@ -151,15 +98,23 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 
 <div class="fb-comments" data-href="http://localhost:4000/general/2016/10/29/welcome-to-my-blog.html" data-numposts="20" data-width="100%" data-mobile="Auto-detected" data-order-by="reverse_time"></div>
-	
 
+</div>
 </article>
 
-
-
-      </div>
+    </div>
     </main>
+
+
 </div>
+
+
+
+
+
+
+
+
     <footer class="site-footer">
 
   <div class="wrapper">
@@ -169,7 +124,11 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-
+          <li>
+            
+              ജസ്റ്റിൻ ചാക്കോ
+            
+            </li>
             
             <li><a href="mailto:contact@justinechacko.in">contact@justinechacko.in</a></li>
             
@@ -185,7 +144,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Tech news, mobile, gadgets, reviews, apps, internet.
+        <p>My portfolio
 </p>
       </div>
     </div>
@@ -193,6 +152,10 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
   </div>
 
 </footer>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
 
 
   </body>
